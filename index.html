@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sorting Visualizer</h1>
+  
+  <div class="controls">
+    <label for="sizeRange">Array Size:</label>
+    <input type="range" id="sizeRange" min="10" max="100" value="30">
+    <span id="sizeValue">30</span>
+
+    <label for="speedRange">Speed (ms):</label>
+    <input type="range" id="speedRange" min="10" max="1000" value="100">
+    <span id="speedValue">100</span> ms
+
+    <input type="text" id="customArray" placeholder="Enter numbers, e.g. 5,6,7,3,8,1" style="width:220px;">
+
+    <button id="newArrayBtn">Generate Array</button>
+    <button id="useCustomBtn">Use Custom Array</button>
+    <button id="bubbleSortBtn">Bubble Sort</button>
+    <button id="shellSortBtn">Shell Sort</button>
+    <button id="heapSortBtn">Heap Sort</button>
+    <button id="themeToggleBtn">🌙 Dark Mode</button>
+    <button id="pausePlayBtn">⏸️ Pause</button>
+    <button id="endBtn">⏹️ End</button>
+  </div>
+
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
